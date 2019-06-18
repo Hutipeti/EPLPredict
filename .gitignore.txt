@@ -1,0 +1,6 @@
+# ignore local folders and config files
+.vscode
+assets
+
+# ignore python cache
+*.pyc
