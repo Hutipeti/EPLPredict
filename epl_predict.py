@@ -18,7 +18,7 @@ def run_experiment():
     X_train, X_test, y_train, y_test = train_test_split(X, y)
 
     # create the neural network and train it
-    mlp = MLPClassifier(hidden_layer_sizes=(20,20,20,20,20,20),max_iter=2000)
+    mlp = MLPClassifier(hidden_layer_sizes=(20,20,20,20,20,20), max_iter=2000)
     mlp.fit(X_train, y_train)
     # run preedictions on the test data and visualize the results
     predictions = mlp.predict(X_test)
@@ -26,8 +26,8 @@ def run_experiment():
     # print(classification_report(y_test,predictions))
     print(accuracy_score(y_test, predictions))
 
-    # iterate over the confusion matrix elements and expose all wrongly predicted
-    # datarow in a csv file
+    # iterate over the confusion matrix elements and expose all wrongly
+    # predicted datarow in a csv file
     # named wrongly_classified_testdata.csv
 
     # TODO get back the original team names!
